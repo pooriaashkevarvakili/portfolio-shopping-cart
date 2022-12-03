@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div
-      class="
+    <div class="
         2xl:ml-10
         xl:ml-10
         lg:ml-10
@@ -16,13 +15,8 @@
         lg:grid-cols-3
         md:grid-cols-1
         grid-cols-1
-      "
-    >
-      <div
-        v-for="product in products"
-        :key="product.id"
-        class="card w-96 mt-4 bg-base-100 shadow-xl"
-      >
+      ">
+      <div v-for="product in products" :key="product.id" class="card w-96 mt-4 bg-base-100 shadow-xl">
         <figure>
           <img class="mt-3" :src="product.img" alt="Shoes" />
         </figure>
@@ -37,10 +31,7 @@
           </div>
 
           <div class="card-actions flex justify-end">
-            <button
-              @click="add(product)"
-              class="w-24 bg-green-400 p-2 mt-3 rounded-xl text-white"
-            >
+            <button @click="add(product)" class="w-24 bg-green-400 p-2 mt-3 rounded-xl text-white">
               add
             </button>
           </div>

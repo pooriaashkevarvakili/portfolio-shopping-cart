@@ -1,49 +1,57 @@
 const product = {
     namespaced: true,
     state: {
-        product: [
-            {
-                name: 'audi',
+        product: [{
+                id: 1,
+                name: 'اودی',
                 price: 200,
                 img: 'https://s25.picofile.com/file/8453124876/audi.jpg'
             },
             {
-                name: 'benz',
+                id: 2,
+                name: 'بنز',
                 price: 300,
                 img: 'https://s24.picofile.com/file/8453124892/benz.jpg'
             },
             {
-                name: 'bmw',
+                id: 3,
+                name: 'بی ام و',
                 price: 400,
                 img: 'https://s25.picofile.com/file/8453124900/bmw.jpg'
             },
             {
-                name: 'devistosix',
+                id: 4,
+                name: 'دویست وشش',
                 price: 500,
                 img: 'https://s24.picofile.com/file/8453125776/divistosix.jpg'
             },
             {
-                name: 'lamborgini',
+                id: 5,
+                name: 'لامبورگینی',
                 price: 600,
                 img: 'https://s24.picofile.com/file/8453124934/lamborgini.jpg'
             },
             {
-                name: 'matiz',
+                id: 6,
+                name: 'ماتیز',
                 price: 700,
                 img: 'https://s25.picofile.com/file/8453124942/matiz.jpg'
             },
             {
-                name: 'mustang',
+                id: 7,
+                name: 'موستانگ',
                 price: 800,
                 img: 'https://s24.picofile.com/file/8453249700/mustang.jpg'
             },
             {
-                name: 'peykan',
+                id: 8,
+                name: 'پیکان',
                 price: 900,
                 img: 'https://s25.picofile.com/file/8453124950/peykan.jpg'
             },
             {
-                name: 'pezo405',
+                id: 9,
+                name: 'پژو405',
                 price: 1000,
                 img: 'https://s24.picofile.com/file/8453249718/pezo405.jpg'
             }
@@ -54,9 +62,7 @@ const product = {
             return state.product
         }
     },
-    mutations: {
-    },
-    actions: {
-    },
+    mutations: {},
+    actions: {},
 }
 export default product

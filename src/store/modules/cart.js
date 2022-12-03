@@ -1,4 +1,3 @@
-
 import Swal from "sweetalert2"
 
 function updateLocalStorage(cart) {
@@ -62,7 +61,9 @@ const cart = {
         }
     },
     actions: {
-        add({ commit }, product) {
+        add({
+            commit
+        }, product) {
             commit('add', product)
             Swal.fire({
                 title: 'product Added',
@@ -74,8 +75,10 @@ const cart = {
                 position: 'top'
             })
         },
-        clear({ commit }) {
-            commit('clear',)
+        clear({
+            commit
+        }) {
+            commit('clear', )
             Swal.fire({
                 title: 'product Added',
                 icon: 'success',
@@ -86,7 +89,9 @@ const cart = {
                 position: 'top'
             })
         },
-        remove({ commit }, id) {
+        remove({
+            commit
+        }, id) {
             commit('remove', id)
             Swal.fire({
                 title: 'product deleted',
@@ -99,7 +104,9 @@ const cart = {
             })
 
         },
-        increment({ commit }, id) {
+        increment({
+            commit
+        }, id) {
             commit('increment', id)
             Swal.fire({
                 title: 'product updated',
@@ -111,7 +118,9 @@ const cart = {
                 position: 'top'
             })
         },
-        decrement({ commit }, id) {
+        decrement({
+            commit
+        }, id) {
             commit('decrement', id)
             Swal.fire({
                 title: 'product notUpdated',
